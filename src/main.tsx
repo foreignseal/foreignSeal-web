@@ -1,7 +1,7 @@
 import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import App from './App'
 import Maintenance from "./Pages/MaintenancePage"
 import DevStatus from "./components/devStatus"
 
