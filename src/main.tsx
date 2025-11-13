@@ -5,7 +5,7 @@ import App from './App.tsx'
 import Maintenance from "./Pages/MaintenancePage"
 import DevStatus from "./components/devStatus"
 
-function Root() {
+export function Root() {
     const [isDev, setIsDev] = useState<boolean>(window.location.hash === '#dev')
     const [isMaintenance] = useState<boolean>(true)
 
