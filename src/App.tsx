@@ -1,13 +1,18 @@
-import './App.css'
+import Tab from "./components/Tab";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import './index.css';
 
 function App() {
-
-  return (
-    <>
-        <h1>the seal hasn't taken the plane</h1>
-        <p>We are awaiting their arrival...</p>
-    </>
-  )
+    return (
+        <>
+            <Tab />
+            <div className="webContent">
+                <Header />
+                <Hero />
+            </div>
+        </>
+    );
 }
 
-export default App
+export default App;

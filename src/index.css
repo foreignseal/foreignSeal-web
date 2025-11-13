@@ -18,6 +18,8 @@ body {
     margin: 0;
     display: flex;
     place-items: center;
+    justify-content: center; /* center horizontally */
+    align-items: center;
     min-width: 320px;
     min-height: 100vh;
 }
@@ -28,6 +30,75 @@ h1 {
     line-height: 1.1;
 }
 
+h2 {
+    font-size: 3.2em;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 15px;
+}
+
+button {
+    font-size: 1.5em;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 p {
     font-weight: 200;
+}
+
+.Tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-self: start;
+    justify-content: start;
+}
+.Tab div {
+    font-size: 12px;
+}
+
+.devtools {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    width: auto;
+    max-width: 90vw;
+    display: flex;
+    gap: 0;
+    padding: 0.5rem;
+    background-color: #ff7171;
+    color: white;
+}
+
+.webContent {
+    position: relative;
+    display: block;
+    background-color: #111111;
+    top: 0;
+    bottom: auto;
+    width: 75vw;
+    margin: 10vh auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    align-self: start; /* overrides the body's vertical centering */
+    align-content: start;
+
+    justify-self: flex-start;
+    flex-direction: column;
+
+}
+
+.site-header div {
+    font-size: 32px;
+    letter-spacing: 8px;
 }
